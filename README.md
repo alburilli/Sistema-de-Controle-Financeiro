@@ -50,7 +50,7 @@ Anderson Luiz
 3. **Criar o Banco de Dados**:
    - Crie o banco de dados **dbfinanceiro** no phpMyAdmin.
    
-   ![dbfinanceiro](https://github.com/seuusuario/seuprojeto/blob/master/assets/dbfinanceiro.png)
+   ![dbfinanceiro](https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_4.png)
 
 4. **Criar as Tabelas**:
    - Na aba **SQL**, cole o seguinte código e execute:
