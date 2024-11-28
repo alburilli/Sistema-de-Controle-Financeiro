@@ -3,3 +3,117 @@ O **Sistema de Controle Financeiro** é uma aplicação desktop para gerenciar r
 
 ![Sistema Controle Financeiro](https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_1.png)
 
+## Autor
+Anderson Luiz
+
+---
+
+## Funcionalidades
+
+- Cadastro de **receitas** e **despesas**.
+- Exibição de **gráficos** de análise financeira.
+- Funcionalidade de **backup** e **restauração** do banco de dados.
+- Controle de **usuários** e **permissões**.
+
+---
+
+## Instruções para Instalação e Uso
+
+### Pré-requisitos
+
+- **Java**: versão 8 ou superior.
+- **IDE**: NetBeans 8.2.
+- **Banco de Dados**: MySQL 8 ou MariaDB (recomendado XAMPP).
+- **Bibliotecas/Frameworks**: Swing, JFreeChart.
+
+### Tecnologias Utilizadas
+
+- **Linguagem**: Java
+- **Banco de Dados**: MySQL
+- **Bibliotecas**: Swing, JFreeChart
+
+---
+
+### Instalação do Banco de Dados
+
+1. **Instalar XAMPP**:
+   - Baixe o XAMPP [aqui](https://www.apachefriends.org/).
+   - Instale e inicie os serviços **Apache** e **MySQL**.
+
+   ![XAMPP Start](https://github.com/seuusuario/seuprojeto/blob/master/assets/xampp1.png)
+
+2. **Acessar o phpMyAdmin**:
+   - Abra seu navegador e acesse: `localhost/dashboard`, então selecione **phpMyAdmin**.
+
+   ![phpMyAdmin](https://github.com/seuusuario/seuprojeto/blob/master/assets/xampp2.png)
+
+3. **Criar o Banco de Dados**:
+   - Crie o banco de dados **dbfinanceiro** no phpMyAdmin.
+   
+   ![dbfinanceiro](https://github.com/seuusuario/seuprojeto/blob/master/assets/dbfinanceiro.png)
+
+4. **Criar as Tabelas**:
+   - Na aba **SQL**, cole o seguinte código e execute:
+
+   ```sql
+   CREATE DATABASE dbfinanceiro;
+   USE dbfinanceiro;
+
+   -- Tabela de Usuários
+   CREATE TABLE tbusuarios (
+       iduser INT PRIMARY KEY AUTO_INCREMENT,  
+       usuario VARCHAR(50) NOT NULL,         
+       fone VARCHAR(20),                    
+       login VARCHAR(50) NOT NULL UNIQUE,  
+       senha VARCHAR(250) NOT NULL,        
+       perfil VARCHAR(20) NOT NULL        
+   );
+
+   -- Tabela de Tipos de Transações
+   CREATE TABLE tipos (
+       id INT PRIMARY KEY AUTO_INCREMENT,      
+       nome VARCHAR(20) NOT NULL UNIQUE       
+   );
+
+   -- Tabela de Status de Transações
+   CREATE TABLE status_transacoes (
+       id INT PRIMARY KEY AUTO_INCREMENT,       
+       descricao VARCHAR(50) NOT NULL UNIQUE    
+   );
+
+   -- Tabela de Descrições
+   CREATE TABLE descricoes (
+       id INT PRIMARY KEY AUTO_INCREMENT,       
+       descricao VARCHAR(255) NOT NULL UNIQUE,  
+       tipo_id INT NOT NULL,                    
+       data_vencimento DATE,                    
+       FOREIGN KEY (tipo_id) REFERENCES tipos(id) ON DELETE RESTRICT
+   );
+
+   -- Tabela de Transações
+   CREATE TABLE transacoes (
+       id INT PRIMARY KEY AUTO_INCREMENT,        
+       descricao_id INT NOT NULL,                
+       valor DECIMAL(10, 2) NOT NULL,            
+       data_pagamento DATE DEFAULT NULL,         
+       proxima_leitura DATE DEFAULT NULL,        
+       data_vencimento DATE DEFAULT NULL,        
+       data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       ultima_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+       status_id INT,                            
+       FOREIGN KEY (descricao_id) REFERENCES descricoes(id) ON DELETE RESTRICT,
+       FOREIGN KEY (status_id) REFERENCES status_transacoes(id) ON DELETE RESTRICT
+   );
+
+   -- Inserindo dados de exemplo
+   INSERT INTO tbusuarios (usuario, fone, login, senha, perfil) VALUES 
+   ('Administrador', '123456789', 'admin', 'admin', 'admin'),
+   ('Usuario', '987654321', 'user', 'user1', 'user');
+
+   INSERT INTO tipos (nome) VALUES
+   ('Receita'),
+   ('Despesa');
+
+   INSERT INTO status_transacoes (descricao) VALUES
+   ('Pago'),
+   ('Pendente');
