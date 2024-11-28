@@ -25,13 +25,17 @@ Anderson Luiz
 
 [download Java 8](https://www.java.com/pt-BR/)
 
-2) [NetBeans IDE 8.2](https://filehippo.com/download_netbeans/8.2/)
+2) O NetBeans IDE permite o desenvolvimento rápido e fácil de aplicações desktop Java, móveis e Web, oferecendo excelentes ferramentas para desenvolvedores.
+
+[NetBeans IDE 8.2](https://filehippo.com/download_netbeans/8.2/)
 
 3) Ter um banco de dados local baseado no **MySQL 8** ou MariaDB compatível, no exemplo usei o XAMPP que pode ser obtido no link indicado.
 
 [download xampp](https://www.apachefriends.org/)
 
-4) [driver MySQL](https://dev.mysql.com/downloads/connector/j/)
+4) O MySQL fornece drivers baseados em padrões para JDBC, ODBC e .Net, permitindo que os desenvolvedores criem aplicativos de banco de dados na linguagem de sua escolha.
+
+[driver MySQL](https://dev.mysql.com/downloads/connector/j/)
 
 5) JFreeChart é uma biblioteca de gráficos 100% Java gratuita que facilita para os desenvolvedores exibir gráficos de qualidade profissional em seus aplicativos.
 
