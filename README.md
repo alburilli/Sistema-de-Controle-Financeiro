@@ -3,4 +3,3 @@ O **Sistema de Controle Financeiro** é uma aplicação desktop para gerenciar r
 
 ![Sistema Controle Financeiro](https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_2.png)
 
-![sistemaOS](https://github.com/professorjosedeassis/infox/blob/master/assets/sistemaOS.png)
