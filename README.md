@@ -40,12 +40,12 @@ Anderson Luiz
    - Baixe o XAMPP [aqui](https://www.apachefriends.org/).
    - Instale e inicie os serviços **Apache** e **MySQL**.
 
-   ![XAMPP Start](https://github.com/seuusuario/seuprojeto/blob/master/assets/xampp1.png)
+   ![XAMPP Start](https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_2.png)
 
 2. **Acessar o phpMyAdmin**:
    - Abra seu navegador e acesse: `localhost/dashboard`, então selecione **phpMyAdmin**.
 
-   ![phpMyAdmin](https://github.com/seuusuario/seuprojeto/blob/master/assets/xampp2.png)
+   ![phpMyAdmin](https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_3.png)
 
 3. **Criar o Banco de Dados**:
    - Crie o banco de dados **dbfinanceiro** no phpMyAdmin.
