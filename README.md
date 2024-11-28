@@ -19,20 +19,29 @@ Anderson Luiz
 
 ---
 
-## Instruções para Instalação e Uso
+## Instruções para instalação e uso do aplicativo
+### Pré requisitos
+1) Ter o Java **versão 8** instalado.
 
-### Pré-requisitos
+[download Java 8](https://www.java.com/pt-BR/)
 
-- **Java**: versão 8 ou superior.
-- **IDE**: NetBeans 8.2.
-- **Banco de Dados**: MySQL 8 ou MariaDB (recomendado XAMPP).
-- **Bibliotecas/Frameworks**: Swing, JFreeChart.
+2) Ter um banco de dados local baseado no **MySQL 8** ou MariaDB compatível, no exemplo usei o XAMPP que pode ser obtido no link indicado.
+
+[download xampp](https://www.apachefriends.org/)
+
+3) JFreeChart é uma biblioteca de gráficos 100% Java gratuita que facilita para os desenvolvedores exibir gráficos de qualidade profissional em seus aplicativos.
+
+[download jfreechart](https://sourceforge.net/projects/jfreechart/files/1.%20JFreeChart/1.0.19/)
+
+4) JCalendar é um bean seletor de data Java para escolher uma data graficamente.
+[download jcalendar] (https://toedter.com/jcalendar/)
 
 ### Tecnologias Utilizadas
 
 - **Linguagem**: Java
-- **Banco de Dados**: MySQL
-- **Bibliotecas**: Swing, JFreeChart
+- **IDE**: NetBeans 8.2.
+- **Banco de Dados**: MySQL (recomendado XAMPP).
+- **Bibliotecas/Frameworks**: Swing, JFreeChart, jcalendar-1.4 jfreechart 1.0.19
 
 ---
 
