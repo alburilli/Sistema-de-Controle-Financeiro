@@ -25,15 +25,19 @@ Anderson Luiz
 
 [download Java 8](https://www.java.com/pt-BR/)
 
-2) Ter um banco de dados local baseado no **MySQL 8** ou MariaDB compatível, no exemplo usei o XAMPP que pode ser obtido no link indicado.
+2) [NetBeans IDE 8.2](https://filehippo.com/download_netbeans/8.2/)
+
+3) Ter um banco de dados local baseado no **MySQL 8** ou MariaDB compatível, no exemplo usei o XAMPP que pode ser obtido no link indicado.
 
 [download xampp](https://www.apachefriends.org/)
 
-3) JFreeChart é uma biblioteca de gráficos 100% Java gratuita que facilita para os desenvolvedores exibir gráficos de qualidade profissional em seus aplicativos.
+4) [driver MySQL](https://dev.mysql.com/downloads/connector/j/)
+
+5) JFreeChart é uma biblioteca de gráficos 100% Java gratuita que facilita para os desenvolvedores exibir gráficos de qualidade profissional em seus aplicativos.
 
 [download jfreechart](https://sourceforge.net/projects/jfreechart/files/1.%20JFreeChart/1.0.19/)
 
-4) JCalendar é um bean seletor de data Java para escolher uma data graficamente.
+6) JCalendar é um bean seletor de data Java para escolher uma data graficamente.
 
 [download jcalendar](https://toedter.com/jcalendar/)
 
