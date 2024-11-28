@@ -4,6 +4,9 @@
 O **Sistema de Controle Financeiro** é uma aplicação desktop para gerenciar receitas e despesas, com uma interface amigável e gráficos interativos para facilitar a análise financeira. O sistema também conta com funcionalidades de backup e restauração para garantir a segurança dos dados e oferece controle de usuários e permissões.
 
 ![Sistema Controle Financeiro](https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_1.png)
+(https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_5.png)
+(https://github.com/alburilli/Sistema-de-Controle-Financeiro/blob/main/assets/Screenshot_6.png)
+
 
 ## Autor
 Anderson Luiz
